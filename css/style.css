@@ -760,8 +760,10 @@ footer {
 @media screen and (max-width: 900px){
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+/*     align-items: flex-start; */
     height: auto;
+    justify-content: center; /* Center the content */
+    padding: 0 10px; /* Adjust padding to avoid side spaces */
   }
 
   .logo {
@@ -953,3 +955,22 @@ footer {
     margin-bottom: 5%;
   }
 }
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center; /* Center the content */
+    padding: 0 10px; /* Adjust padding to avoid side spaces */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Stack the items vertically */
+    align-items: center; /* Center them */
+    padding-left: 0; /* Remove left padding */
+    margin-top: 0; /* Adjust margin if necessary */
+  }
+
+  .navbar ul li {
+    margin: 10px 0; /* Vertical margin for list items */
+    text-align: center; /* Center the text */
+  }
+}
+
